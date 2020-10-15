@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Prism from 'prismjs'
 import { useEffect } from 'react'
 import Layout from '../components/layout'
-import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/components/prism-rust'
 import 'prismjs/components/prism-jsx'
 import styles from './acerca.module.css'
