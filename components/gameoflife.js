@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic'
 import { useEffect, useState, useRef } from 'react'
-import styles from './gameoflife.module.css'
 
 const GameOfLife = dynamic({
   loader: async () => {
@@ -26,7 +25,7 @@ const GameOfLife = dynamic({
 
         return (
           <>
-            <pre className={styles.gol}>{universe.current.render()}</pre>
+            <pre>{universe.current.render()}</pre>
           </>
         )
       }
