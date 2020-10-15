@@ -4,7 +4,7 @@ import styles from './gameoflife.module.css'
 
 const GameOfLife = dynamic({
   loader: async () => {
-    const rust = await import('../pkg')
+    const rust = await import('../pkg/')
 
     // Return the React component using Webassembly
     return (
