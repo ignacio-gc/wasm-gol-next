@@ -1,0 +1,23 @@
+.h1h2 {
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.h1h2 h1 {
+  font-size: 3em;
+  margin-top: 5vh;
+}
+
+.golGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* max-width: 900px; */
+  margin-top: 8vh;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.48);
+  margin-bottom: 5vh;
+}
+

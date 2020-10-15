@@ -1,0 +1,59 @@
+  .container {
+    max-width: 800px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+  }
+
+  .container a {
+    text-decoration: none;
+    color: rgb(180, 90, 135);
+  }
+
+  .container h2, .container h3 {
+    font-family: roboto;
+    margin: 5vh 0 2.5vh;
+  }
+
+  .codeBlock code {
+    font-size: 0.8em;
+  }
+
+  .texto pre {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .nb {
+    background-color: lightgray;
+  }
+
+  .linkDiv {
+    margin-top: 5vh;
+  }
+
+  .link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Cantarell;
+    color: rgb(180, 90, 135);
+  }
+
+  .link:link {
+    text-decoration: none;
+  }
+
+  .link:visited {
+    text-decoration: none;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  .texto {
+    font-size: 1.2rem;
+    font-family: Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }

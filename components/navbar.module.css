@@ -1,0 +1,20 @@
+ .container {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   margin: 0%;
+   padding: 0%;
+   list-style: none;
+   font-family: roboto;
+   font-size: 1.5em;
+   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(66, 66, 66), rgb(59, 59, 59), rgb(56, 56, 56), rgb(0, 0, 0)), url("../static/Arch_Linux_Wallpapers_05.png");
+   height: 4.4vh;
+   min-height: 40px;
+   padding-right: 100px;
+ }
+
+ .nav a {
+   color: #eeeeee;
+   text-decoration: none;
+   margin: 0 2vw;
+ }
