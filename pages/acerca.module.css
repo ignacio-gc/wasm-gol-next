@@ -56,3 +56,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
+
+  .container ul, .container ol {
+    padding: 25px;
+  }
