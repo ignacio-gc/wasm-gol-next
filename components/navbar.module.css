@@ -18,7 +18,15 @@
    padding: 15px 5px;
  }
 
- .nv {
+ .navbar {
    background: #222;
    padding: 0 15px;
+ }
+
+ .font {
+   color: white;
+ }
+
+ .font {
+   float: left;
  }
