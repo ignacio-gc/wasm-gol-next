@@ -4,10 +4,16 @@ import Link from 'next/link'
 const Navbar = () => {
 
   return (
-    <div className={styles.container}>
-      <a href="https://github.com/ignacio-gc/wasm-gol-next">Github</a>
-      <Link href="/acerca"><a href="">Acerca</a></Link>
-    </div>
+    <nav className={styles.nv}>
+      <ul className={styles.menu}>
+        <li>
+          <a href="https://github.com/ignacio-gc/wasm-gol-next">Github</a>
+        </li>
+        <li>
+          <Link href="/acerca"><a href="">Acerca</a></Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 

@@ -1,18 +1,25 @@
 .header {
   text-align: center;
-  font-family: roboto; 
+  font-family: roboto;
 }
 
 .header h1 {
   margin-top: 5vh;
 }
 
-.golGallery {
+.gol {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2vw;
+  font-size: 2.4vw;
   font-family: monospace;
   line-height: 0.6;
+  margin: 8vh 1vw;
 }
 
+@media (min-width: 992px) {
+  .gol {
+    margin: 8vh auto;
+    font-size: 1vw;
+  }
+}

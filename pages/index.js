@@ -11,7 +11,7 @@ const Page = ({ router: { query } }) => {
           <h1>Game of Life</h1>
           <h2>Rust + Webassembly + Next.js</h2>
         </div>
-        <div className={styles.golGallery}>
+        <div className={styles.gol}>
           <GameOfLife width={64} height={64} />
         </div>
       </Layout>
