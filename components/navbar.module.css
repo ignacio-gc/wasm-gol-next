@@ -1,32 +1,37 @@
+ .hide li {
+   display: none;
+ }
+
+ .show {
+   height: 40px;
+ }
+
  .menu {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   font-family: roboto;
-   list-style-type: none;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   align-items: flex-start;
+   background-color: black;
  }
 
- .menu a {
-   color: #eeeeee;
+ .menu .btn {
+   align-self: flex-end;
+ }
+
+ .menu li {
+   font-size: 1.3rem;
+   width: 100%;
+   color: white;
+   background-color: black;
+   font-family: roboto;
+   text-decoration: none;
+   padding: 10px;
+ }
+
+ .menu a:visited,
+ .menu a:link {
    text-decoration: none;
  }
 
- .menu li a {
-   display: block;
-   padding: 15px 5px;
- }
-
- .navbar {
-   background: #222;
-   padding: 0 15px;
- }
-
- .font {
+ .menu a {
    color: white;
- }
-
- .font {
-   float: left;
  }
