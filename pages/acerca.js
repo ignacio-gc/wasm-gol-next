@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import 'prismjs/components/prism-rust'
 import 'prismjs/components/prism-jsx'
 import styles from './acerca.module.css'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Acerca = () => {
 
@@ -86,7 +88,7 @@ const GameOfLife = dynamic({
         <div className={styles.container}>
           <div className={styles.linkDiv}>
             <Link href="/">
-              <a className={styles.link}>🡐 back</a>
+              <a className={styles.link}><span><FontAwesomeIcon icon={faArrowLeft} /></span></a>
             </Link>
           </div>
           <div className={styles.texto}>
@@ -187,7 +189,7 @@ const GameOfLife = dynamic({
 
           <div className={styles.linkDiv}>
             <Link href="/">
-              <a className={styles.link}>🡐 back</a>
+              <a className={styles.link}><span><FontAwesomeIcon icon={faArrowLeft} /></span></a>
             </Link>
           </div>
         </div>

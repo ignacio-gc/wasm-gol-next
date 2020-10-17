@@ -28,6 +28,7 @@
 
   .linkDiv {
     margin-top: 5vh;
+    margin-left: 6vw;
   }
 
   .link {
@@ -53,10 +54,14 @@
     font-size: 1.2rem;
     font-family: Cantarell, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    margin-top: 1.5rem;
+    margin: 1.3rem;
     margin-bottom: 1.5rem;
   }
 
   .container ul, .container ol {
     padding: 25px;
+  }
+
+  .arrow {
+    margin-left: 3vw;
   }
