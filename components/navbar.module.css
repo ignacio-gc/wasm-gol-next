@@ -2,36 +2,24 @@
    display: none;
  }
 
- .show {
-   height: 40px;
+ .show li {
+   height: 45px;
  }
 
  .menu {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    background-color: black;
- }
-
- .menu .btn {
-   align-self: flex-end;
- }
-
- .menu li {
-   font-size: 1.3rem;
-   width: 100%;
-   color: white;
-   background-color: black;
+   font-size: 1.5rem;
    font-family: roboto;
-   text-decoration: none;
-   padding: 10px;
  }
 
- .menu a:visited,
- .menu a:link {
-   text-decoration: none;
+ .show li {
+   margin: auto;
+   margin-top: 15px;
  }
 
- .menu a {
-   color: white;
+ .btn {
+   border: red 1px solid;
  }

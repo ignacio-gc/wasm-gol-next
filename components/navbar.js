@@ -14,13 +14,15 @@ const Navbar = () => {
   return (
     <nav>
       <ul className={`${styles.menu} ${toogleState ? styles.show : styles.hide}`}>
-        <button className="btn" onClick={toggle}><span><FontAwesomeIcon icon={faBars}  size={'2x'} /></span></button>
+        <a className="btn" onClick={toggle}>
+          <FontAwesomeIcon icon={faBars} size={'2x'} style={{ color: 'white' }} />
+        </a>
         <li>
-          <Link href="/acerca"><a href=""><span><FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} /></span></a></Link>
+          <Link href="/acerca"><a><FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} /></a></Link>
         </li>
         <li>
-          <a href="https://github.com/ignacio-gc/wasm-gol-next">
-            <span className="font"><FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} /></span></a>
+          <a href="https://github.com/ignacio-gc/wasm-gol-next" target="_">
+            <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} /></a>
         </li>
       </ul>
     </nav>
