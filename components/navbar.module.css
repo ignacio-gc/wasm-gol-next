@@ -21,5 +21,6 @@
  }
 
  .btn {
-   border: red 1px solid;
+   align-self: flex-end;
+   margin: 5px;
  }
