@@ -19,9 +19,7 @@ const Navbar = () => {
         <li>
           <Link href="/acerca">
             <a>
-              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
-              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
-              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
+              acerca
             </a>
           </Link>
         </li>
