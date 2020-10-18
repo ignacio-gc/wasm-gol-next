@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
   const [toogleState, setState] = useState(false)
@@ -13,9 +13,15 @@ const Navbar = () => {
   return (
     <nav>
       <ul className={`${styles.menu} ${toogleState ? styles.show : styles.hide}`}>
-        <a className={styles.btn} onClick={toggle}>
-          <FontAwesomeIcon icon={faBars} style={{ color: 'white' }} />
-        </a>
+        {toogleState ? (
+          <a className={styles.btn} onClick={toggle}>
+            <FontAwesomeIcon icon={faTimes} style={{ color: 'white' }} />
+          </a>
+        ) : (
+            <a className={styles.btn} onClick={toggle}>
+              <FontAwesomeIcon icon={faBars} style={{ color: 'white' }} />
+            </a>
+          )}
         <li>
           <Link href="/acerca">
             <a>
