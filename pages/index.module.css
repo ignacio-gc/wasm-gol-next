@@ -15,12 +15,15 @@
   font-size: 2.4vw;
   font-family: monospace;
   line-height: 0.6;
-  margin: 8vh 1vw;
+  margin: 8vh 3.5vw;
+  -webkit-box-shadow: 4px 6px 30px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 30px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 6px 30px -5px rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 992px) {
   .gol {
-    margin: 8vh auto;
-    font-size: 1vw;
+    margin: 8vh 21vw;
+    font-size: 1.5vw;
   }
 }
