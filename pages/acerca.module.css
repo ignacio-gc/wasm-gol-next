@@ -54,6 +54,11 @@
     margin-bottom: 1.5rem;
   }
 
+  .texto blockquote {
+    font-style: italic;
+    padding: 2vh;
+  }
+
   .container ul,
   .container ol {
     padding: 25px;

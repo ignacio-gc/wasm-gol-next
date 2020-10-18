@@ -114,9 +114,9 @@ const GameOfLife = dynamic({
         </div>
         <div className={styles.texto}>
           Según <a href="https://developer.mozilla.org/es/docs/WebAssembly/Concepts" target="_">MDN web docs</a> <b>Webassembly</b> es:
-            <p><blockquote>un nuevo tipo de código que puede ser ejecutado en navegadores modernos, y provee nuevas
+            <p><blockquote>"un nuevo tipo de código que puede ser ejecutado en navegadores modernos, y provee nuevas
           funcionalidades y mejoras en rendimiento. No está pensado para ser ser escrito a mano, si no que está diseñado par
-            ser un objeto final de compilación para lenguajes de bajo nivel como C, C++, Rust, etc.</blockquote></p>
+            ser un objeto final de compilación para lenguajes de bajo nivel como C, C++, Rust, etc."</blockquote></p>
 
             Rust tiene un buen soporte de Webassembly, con herramientas como wasm-bindgen que ayudan en la comunicación
             con Javascript. A eso hay que agregar que a diferencia de C y C++ el sistema de Ownership nos protege
