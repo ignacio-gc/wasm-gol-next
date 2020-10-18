@@ -17,7 +17,13 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} style={{ color: 'white' }} />
         </a>
         <li>
-          <Link href="/acerca"><a><FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} /></a></Link>
+          <Link href="/acerca">
+            <a>
+              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
+              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
+              <FontAwesomeIcon icon={faQuestion} style={{ color: 'white' }} />
+            </a>
+          </Link>
         </li>
         <li>
           <a href="https://github.com/ignacio-gc/wasm-gol-next" target="_">

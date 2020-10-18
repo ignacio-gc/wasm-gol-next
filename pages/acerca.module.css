@@ -8,13 +8,14 @@
     color: rgb(180, 90, 135);
   }
 
-  .container h2, .container h3 {
+  .container h2,
+  .container h3 {
     font-family: roboto;
     margin: 5vh 0 2.5vh;
   }
 
   .codeBlock code {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   .texto pre {
@@ -24,11 +25,6 @@
 
   .nb {
     background-color: lightgray;
-  }
-
-  .linkDiv {
-    margin-top: 5vh;
-    margin-left: 6vw;
   }
 
   .link {
@@ -54,14 +50,15 @@
     font-size: 1.2rem;
     font-family: Cantarell, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    margin: 1.3rem;
+    margin: 2.5vw;
     margin-bottom: 1.5rem;
   }
 
-  .container ul, .container ol {
+  .container ul,
+  .container ol {
     padding: 25px;
   }
 
-  .arrow {
-    margin-left: 3vw;
+  .linkDiv {
+    margin: 5vh 2.5vw;
   }
