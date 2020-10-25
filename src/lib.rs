@@ -86,7 +86,7 @@ impl Universe {
             }
         }
 
-        for n in (0..width * height - (cells.len()) as u32) {
+        for _n in (0..width * height - (cells.len()) as u32) {
             cells.push(Cell::Dead)
         }
 

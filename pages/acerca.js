@@ -52,7 +52,6 @@ const GameOfLife = dynamic({
     return (
       (props) => {
         // useRef: if universe is used directly doen't work
-        const pattern = Uint32Array.from([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
         const universe = props.pattern
           ? useRef(rust.Universe.new_pattern(props.width, props.height, props.pattern))
           : useRef(rust.Universe.new(props.width, props.height))
@@ -91,13 +90,11 @@ const GameOfLife = dynamic({
           </Link>
         </div>
         <div className={styles.texto}>
-          Esta página es parte de mi aprendizaje de <a href="https://reactjs.org/">React</a>
-            , <a href="https://nextjs.org/" target="_">Next</a>
-            , <a href="https://www.rust-lang.org/">Rust</a> y <a href="https://webassembly.org/">Webassembly</a>.
-            En particular es el
-            intento de incorporar <a href="https://rustwasm.github.io/docs/book/" target="_">este</a> tutorial
-            que implementa el Juego de la vida en Wasm a Next.
-             </div>
+          Esta página es mi primer intento de usar <a href="https://webassembly.org/">Webassembly (Wasm)
+          </a> junto con <a href="https://nextjs.org/" target="_">Next.js</a>.
+          Para eso use <a href="https://rustwasm.github.io/docs/book/" target="_">este</a> tutorial que implementa
+          El juego de la vida en Rust y lo compila a Wasm.
+        </div>
         <div className={styles.texto}>
           El <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida" target="_">juego de la vida</a> es un autómata
             celular diseñado por el matemático británico John Horton Conway en 1970.
@@ -114,23 +111,20 @@ const GameOfLife = dynamic({
         </div>
         <div className={styles.texto}>
           Según <a href="https://developer.mozilla.org/es/docs/WebAssembly/Concepts" target="_">MDN web docs</a> <b>Webassembly</b> es:
-            <p><blockquote>"un nuevo tipo de código que puede ser ejecutado en navegadores modernos, y provee nuevas
+          <p><blockquote>"un nuevo tipo de código que puede ser ejecutado en navegadores modernos, y provee nuevas
           funcionalidades y mejoras en rendimiento. No está pensado para ser ser escrito a mano, si no que está diseñado par
-            ser un objeto final de compilación para lenguajes de bajo nivel como C, C++, Rust, etc."</blockquote></p>
-
-            Rust tiene un buen soporte de Webassembly, con herramientas como wasm-bindgen que ayudan en la comunicación
-            con Javascript. A eso hay que agregar que a diferencia de C y C++ el sistema de Ownership nos protege
-            de ciertos errores y junto con otras características del lenguaje hace de "red de contención". Por último
-            vale la pena aprenderlo!
-          </div>
+          ser un objeto final de compilación para lenguajes de bajo nivel como C, C++, Rust, etc."</blockquote></p>
+          <a href="https://www.rust-lang.org/">Rust</a> tiene un buen soporte de Webassembly, con herramientas como wasm-bindgen que ayudan en la comunicación
+          con Javascript.
+        </div>
         <div className={styles.texto}>
           <h2>Algunos puntos</h2>
             Una vez que completamos el tutorial de Wasm y tenemos la implementación del Juego de la vida la primer pregunta
-            que surge es ¿cómo se integra en Next.js?
+            que surge si uno quire usar Next.js es ¿cómo se integra?
           </div>
         <div className={styles.texto}>
           <h3>Comunicación con Wasm</h3>
-          La información al respecto es poca, consiste en un ejemplo que se llama "with-webassembly".
+          La información al respecto es poca, hay un ejemplo que se llama "with-webassembly" donde se muestra cómo crear un componente con Wasm.
           Nos interesa el archivo <a href="https://github.com/vercel/next.js/blob/canary/examples/with-webassembly/pages/index.js"> index.js</a> donde
           podemos ver cómo se carga Wasm:
           <pre className={styles.codeBlock}><code className={"language-jsx"}>{fragmentoIndexJs}</code></pre>
@@ -141,8 +135,8 @@ const GameOfLife = dynamic({
           a <code className={styles.nb}>dynamic()</code> devuelve un componente React donde vamos a poder usar esas funciones.
           </div>
         <div className={styles.texto}>
-          Tengo que volver a aclarar que esto es más que nada parte de un aprendizaje y para nada
-          algo acabado. Como ejemplo aún no integré el compilado del código Rust en Next, y mi solución fue compilar
+          Aclaro que esto es más que nada parte de un aprendizaje y para nada
+          algo acabado. Aún no integré el compilado del código Rust en Next, y mi solución fue compilar
           el código del tutorial y copiar la
           carpeta <code className={styles.nb}>pkg/</code> (Wasm-pack genera otros archivos además
           de <code className={styles.nb}>.wasm</code> para poder comunicarse, es por eso que hay que copiar la carpeta)

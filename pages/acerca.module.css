@@ -67,3 +67,14 @@
   .linkDiv {
     margin: 5vh 3vw;
   }
+
+
+  @media (min-width: 992px) {
+    .texto {
+      font-size: 1.2rem;
+    }
+
+    .codeBlock code {
+      font-size: 1rem;
+    }
+  }

@@ -9,7 +9,6 @@ const GameOfLife = dynamic({
     return (
       (props) => {
         // useRef: if universe is used directly doen't work
-        const pattern = Uint32Array.from([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
         const universe = props.pattern
           ? useRef(rust.Universe.new_pattern(props.width, props.height, props.pattern))
           : useRef(rust.Universe.new(props.width, props.height))
