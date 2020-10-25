@@ -96,8 +96,8 @@ const GameOfLife = dynamic({
           El juego de la vida en Rust y lo compila a Wasm.
         </div>
         <div className={styles.texto}>
-          El <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida" target="_">juego de la vida</a> es un autómata
-            celular diseñado por el matemático británico John Horton Conway en 1970.
+          El <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida" target="_">juego de la vida</a> (game
+            of life) es un autómata celular diseñado por el matemático británico John Horton Conway en 1970.
             Es un juego de cero jugadores, y consiste en una grilla infinita donde
             cada casillero representa una "célula" que puede encontrarse en uno de dos estados: viva o muerta, poblada o despoblada,
             encendida o apagada, etc.

@@ -11,7 +11,7 @@ const Navbar = () => {
   const toggle = () => setState(prevState => !prevState)
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={`${styles.menu} ${toogleState ? styles.show : styles.hide}`}>
         {toogleState ? (
           <a className={styles.btn} onClick={toggle}>

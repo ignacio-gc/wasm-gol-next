@@ -1,28 +1,33 @@
- .hide li {
-   display: none;
- }
+.hide li {
+  display: none;
+}
 
- .show li {
-   height: 45px;
- }
+.show li {
+  height: 45px;
+}
 
- .menu {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
-   padding: 15px;
-   padding-right: 35px;
-   background-color: black;
-   font-size: 1.3rem;
-   font-family: roboto;
- }
+.nav {
+  background-color: black;
+  margin: 0;
+}
 
- .show li {
-   margin-top: 10px;
-   padding-top: 10px;
- }
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-family: roboto;
+  max-width: 800px;
+  margin: auto;
+}
 
- .show a {
-   color: white;
-   text-decoration: none;
- }
+.show li {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.show a {
+  color: white;
+  text-decoration: none;
+}
