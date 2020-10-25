@@ -6,7 +6,10 @@
 
 .header h1 {
   margin-top: 5vh;
-  padding: 3vh;
+}
+
+.header h2 {
+  margin-top: 3vh;
 }
 
 .gol {

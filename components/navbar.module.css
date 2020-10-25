@@ -16,11 +16,10 @@
   flex-direction: column;
   align-items: flex-end;
   padding: 15px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: roboto;
-  max-width: 800px;
   margin: auto;
-  padding-right: 5vw;
+  margin-right: 3vw;
 }
 
 .show li {
