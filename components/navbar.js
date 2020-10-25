@@ -25,13 +25,13 @@ const Navbar = () => {
         <li>
           <Link href="/acerca">
             <a>
-              acerca
+              Acerca
             </a>
           </Link>
         </li>
         <li>
           <a href="https://github.com/ignacio-gc/wasm-gol-next" target="_">
-            <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} /></a>
+            Github <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} /></a>
         </li>
       </ul>
     </nav>

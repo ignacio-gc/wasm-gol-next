@@ -90,9 +90,9 @@ const GameOfLife = dynamic({
           </Link>
         </div>
         <div className={styles.texto}>
-          Esta página es mi primer intento de usar <a href="https://webassembly.org/">Webassembly (Wasm)
-          </a> junto con <a href="https://nextjs.org/" target="_">Next.js</a>.
-          Para eso use <a href="https://rustwasm.github.io/docs/book/" target="_">este</a> tutorial que implementa
+          Esta página es mi primer intento de usar Webassembly (<a href="https://webassembly.org/">Wasm
+          </a>) en <a href="https://nextjs.org/" target="_">Next.js</a>.
+          Para eso usé <a href="https://rustwasm.github.io/docs/book/" target="_">este</a> tutorial que implementa
           El juego de la vida en Rust y lo compila a Wasm.
         </div>
         <div className={styles.texto}>
@@ -118,13 +118,18 @@ const GameOfLife = dynamic({
           con Javascript.
         </div>
         <div className={styles.texto}>
+          <a href="https://nextjs.org/" target="_">Next.js</a> es un framework basado en <a href="https://es.reactjs.org/">React
+          </a> que permite hacer páginas web híbridas tanto státicas como renderizadas en el lado del servidor (SSR).
+        </div>
+        <div className={styles.texto}>
           <h2>Algunos puntos</h2>
             Una vez que completamos el tutorial de Wasm y tenemos la implementación del Juego de la vida la primer pregunta
-            que surge si uno quire usar Next.js es ¿cómo se integra?
+            que surge si uno quire usar el resultado en Next.js es ¿cómo se integra?
           </div>
         <div className={styles.texto}>
           <h3>Comunicación con Wasm</h3>
-          La información al respecto es poca, hay un ejemplo que se llama "with-webassembly" donde se muestra cómo crear un componente con Wasm.
+          La información al respecto es poca. Dentro del repositorio de Next.js vamos a encontrar un 
+          ejemplo que se llama "with-webassembly" donde se muestra cómo crear un componente con Wasm.
           Nos interesa el archivo <a href="https://github.com/vercel/next.js/blob/canary/examples/with-webassembly/pages/index.js"> index.js</a> donde
           podemos ver cómo se carga Wasm:
           <pre className={styles.codeBlock}><code className={"language-jsx"}>{fragmentoIndexJs}</code></pre>
@@ -171,9 +176,6 @@ const GameOfLife = dynamic({
             <li>
               Agregar una galería de patrones como <a href="https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)" target="_">Glider</a>
             </li>
-            <li>
-              Integrar el paso de compilación del código Rust!
-              </li>
           </ul>
         </div>
         <div className={styles.linkDiv}>
