@@ -1,80 +1,84 @@
-  .container {
-    max-width: 800px;
-    margin: 8vh auto;
-  }
+.container {
+  max-width: 800px;
+  margin: 8vh auto;
+}
 
-  .container a {
-    text-decoration: none;
-    color: rgb(180, 90, 135);
-  }
+.container a {
+  text-decoration: none;
+  color: rgb(180, 90, 135);
+}
 
-  .container h2,
-  .container h3 {
-    font-family: roboto;
-    margin: 5vh 0 2.5vh;
+.container h2,
+.container h3 {
+  font-family: roboto;
+  margin: 5vh 0 2.5vh;
+}
+
+.codeBlock code {
+  font-size: 0.8rem;
+}
+
+.texto pre {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.nb {
+  background-color: lightgray;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Cantarell;
+  color: rgb(180, 90, 135);
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.texto {
+  font-size: 1rem;
+  font-family: Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  margin: 1.5rem 3vw;
+}
+
+.texto blockquote {
+  font-style: italic;
+  padding: 2vh;
+}
+
+.container ul,
+.container ol {
+  padding: 25px;
+}
+
+.linkDiv {
+  margin: 5vh 3vw;
+}
+
+.tweet {
+  display: flex;
+  justify-content: center;
+  margin: 3vh auto;
+}
+
+@media (min-width: 992px) {
+  .texto {
+    font-size: 1.2rem;
   }
 
   .codeBlock code {
-    font-size: 0.8rem;
-  }
-
-  .texto pre {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-
-  .nb {
-    background-color: lightgray;
-  }
-
-  .link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: Cantarell;
-    color: rgb(180, 90, 135);
-  }
-
-  .link:link {
-    text-decoration: none;
-  }
-
-  .link:visited {
-    text-decoration: none;
-  }
-
-  .link:hover {
-    text-decoration: underline;
-  }
-
-  .texto {
     font-size: 1rem;
-    font-family: Cantarell, 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    margin: 3vw;
-    margin-bottom: 1.5rem;
   }
-
-  .texto blockquote {
-    font-style: italic;
-    padding: 2vh;
-  }
-
-  .container ul,
-  .container ol {
-    padding: 25px;
-  }
-
-  .linkDiv {
-    margin: 5vh 3vw;
-  }
-
-
-  @media (min-width: 992px) {
-    .texto {
-      font-size: 1.2rem;
-    }
-
-    .codeBlock code {
-      font-size: 1rem;
-    }
-  }
+}
