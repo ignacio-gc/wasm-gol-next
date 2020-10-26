@@ -1,6 +1,4 @@
 import Navbar from '../components/navbar'
-import Head from 'next/head'
-
 
 const Layout = ({ children }) => {
   return (

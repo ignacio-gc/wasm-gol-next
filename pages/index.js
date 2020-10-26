@@ -9,7 +9,7 @@ const Page = ({ router: { query } }) => {
       <Layout>
         <div className={styles.header}>
           <h1>El juego de la vida</h1>
-          <h2>Implementado 🦀 + 🕸️ + Next.js</h2>
+          <h2>🦀 + 🕸️ + Next.js</h2>
         </div>
         <div className={styles.gol}>
           <GameOfLife width={64} height={64} />
