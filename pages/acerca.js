@@ -140,7 +140,7 @@ const GameOfLife = dynamic({
           </div>
           <div className={styles.texto}>
             <h3>Comunicación con Wasm</h3>
-          La información al respecto no es mucha. Dentro del repositorio de Next.js vamos a encontrar un
+          Dentro del repositorio de Next.js vamos a encontrar un
           ejemplo que se llama "with-webassembly" donde se muestra cómo crear un componente con Wasm.
           Nos interesa el archivo <a href="https://github.com/vercel/next.js/blob/canary/examples/with-webassembly/pages/index.js"> index.js</a> donde
           podemos ver cómo se hace:
@@ -153,14 +153,13 @@ const GameOfLife = dynamic({
           </div>
           <div className={styles.texto}>
             <h3>Animación del juego</h3>
-          El tutorial de Wasm implementa una primera solución para animar el juego usando
-          <code className={styles.nb}> requestAnimationFrame()</code> pero
-          como Next.js está basado en React después de unos intentos me pareció mejor
-          usar <code className={styles.nb}>setInterval()</code> junto con <code className={styles.nb}>useState</code> para
+          El tutorial de Wasm implementa una primer solución usando <code className={styles.nb}> requestAnimationFrame()
+          </code> para animar el juego pero como Next.js está basado en React después de unos intentos 
+          usé <code className={styles.nb}>setInterval()</code> junto con <code className={styles.nb}>useState</code> para
           provocar el re renderizado incrementando un contador por cada generación.
           Por otro lado el universo del juego está implementado usando un <code className={styles.nb}>struct</code> mutable
-          que es modificado cada vez que se llama a la función <code className={styles.nb}>tick()</code>
-          (que calcula la siguiente generación).
+          que se modifica cada llamado a la función <code className={styles.nb}>tick()</code>
+          , que calcula cada nueva generación. 
         </div>
           <div className={styles.texto}><p>Componente que se comunica con Wasm:</p>
             <pre className={styles.codeBlock}><code className={"language-rust"}>{fragmentoRust}</code></pre></div>
