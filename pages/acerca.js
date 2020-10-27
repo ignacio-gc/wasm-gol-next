@@ -104,7 +104,7 @@ const GameOfLife = dynamic({
           <div className={styles.texto}>
             El <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida" target="_">Juego de la vida</a> (<i>Game
             of life</i>) es un autómata celular diseñado por el matemático británico John Horton Conway en 1970.
-            Es un juego de cero jugadores, y consiste en una grilla infinita donde
+            Es un juego de cero jugadores, y consiste en una grilla infinita (como la de la página anterior) donde
             cada casillero representa una "célula" que puede encontrarse en uno de dos estados: viva o muerta, poblada o despoblada,
             encendida o apagada, etc.
             Una vez establecido el patrón inicial solamente queda ver cómo evoluciona según las siguientes reglas:
@@ -120,11 +120,10 @@ const GameOfLife = dynamic({
           <p><blockquote>"un nuevo tipo de código que puede ser ejecutado en navegadores modernos, y provee nuevas
             funcionalidades y mejoras en rendimiento. No está pensado para ser ser escrito a mano, si no que está diseñado par
           ser un objeto final de compilación para lenguajes de bajo nivel como C, C++, Rust, etc."</blockquote></p>
-
             <p>
               Un ejemplo reciente de las posibilidades que da es la mejora de rendimiento de TensorFlow.js gracias a Wasm:
               <div className={styles.tweet}>
-                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔋⚡️ Get supercharged with WebAssembly<br></br><br></br>In the latest update, supercharging the <a href="https://twitter.com/hashtag/TensorFlowJS?src=hash&amp;ref_src=twsrc%5Etfw">#TensorFlowJS</a> WebAssembly backend with SIMD and multi-threading can get up to a 10x performance boost for free. <br></br><br></br>Learn more → <a href="https://t.co/ZKFWaxFAzE">https://t.co/ZKFWaxFAzE</a> <a href="https://t.co/HM3dyliTND">pic.twitter.com/HM3dyliTND</a></p>&mdash; TensorFlow (@TensorFlow) <a href="https://twitter.com/TensorFlow/status/1301211668735811584?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote>
+                <blockquote className="twitter-tweet"><p lang="en" dir="ltr">🔋⚡️ Get supercharged with WebAssembly<br></br><br></br>In the latest update, supercharging the <a href="https://twitter.com/hashtag/TensorFlowJS?src=hash&amp;ref_src=twsrc%5Etfw">#TensorFlowJS</a> WebAssembly backend with SIMD and multi-threading can get up to a 10x performance boost for free. <br></br><br></br>Learn more → <a href="https://t.co/ZKFWaxFAzE">https://t.co/ZKFWaxFAzE</a> <a href="https://t.co/HM3dyliTND">pic.twitter.com/HM3dyliTND</a></p>&mdash; TensorFlow (@TensorFlow) <a href="https://twitter.com/TensorFlow/status/1301211668735811584?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote>
               </div>
             </p>
             <a href="https://www.rust-lang.org/">Rust</a> tiene un buen soporte de Webassembly, con herramientas como wasm-bindgen que ayudan en la comunicación
