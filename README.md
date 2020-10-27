@@ -1,10 +1,8 @@
-# Webassembly + Next.js
-
-Wasm en Next.js
+# El juego de la vida en Rust + Webassembly + Next.js
 
 ### Dependencias
 
-rust: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+Rust: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
 wasm-pack: `curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh`
 
