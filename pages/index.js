@@ -8,7 +8,7 @@ const Page = ({ router: { query } }) => {
     <>
       <Layout>
         <div className={styles.header}>
-          <h1>El juego de la vida</h1>
+          <h1>El Juego de la vida</h1>
           <h2>Rust 🦀 + Wasm 🕸️ + Next.js</h2>
         </div>
         <div className={styles.gol}>
