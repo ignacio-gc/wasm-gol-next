@@ -98,7 +98,7 @@ const GameOfLife = dynamic({
             Esta página es mi primer intento de usar Webassembly (<a href="https://webassembly.org/">Wasm
           </a>) en <a href="https://nextjs.org/" target="_">Next.js</a>.
           Para eso primero seguí <a href="https://rustwasm.github.io/docs/book/" target="_">este</a> tutorial que implementa
-          El juego de la vida en Rust y lo compila a Wasm y busqué cómo podía incorporarlo. Por suerte Next tiene soporte
+          El Juego de la vida en Rust y lo compila a Wasm y busqué cómo podía incorporarlo. Por suerte Next tiene soporte
           para Wasm.
         </div>
           <div className={styles.texto}>
