@@ -26,7 +26,7 @@
   box-shadow: 4px 6px 30px -5px rgba(0, 0, 0, 0.75);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 792px) {
   .gol {
     padding: 1vw;
     margin: 5vh 25.7vw;
